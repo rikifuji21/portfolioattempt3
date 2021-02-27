@@ -1,0 +1,109 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.background
+{
+  background-color:rgb(16, 16, 16);
+  overflow-x:hidden;
+  color:black;
+}
+
+.header {
+  background-color:rgb(16, 16, 16);  
+  height:30%;
+  width:100%;
+  color:white;
+}
+
+#desc {
+  font-size: 15pt;
+}
+
+.section
+{
+  background-color:rgb(16, 16, 16);  
+  height:70%;
+  width:100%;
+}
+
+.section2
+{
+  background-color:rgb(16, 16, 16);  
+  height:30%;
+  width:100%;
+}
+
+.section3
+{
+  background-color:rgb(16, 16, 16);  
+  height:50%;
+  width:100%;
+}
+
+.section4
+{
+  background-color:rgb(16, 16, 16);  
+  height:40%;
+  width:100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden;
+  background-color: #333;
+  /*position: -webkit-sticky;  -webkit- required for compatability with Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(200, 200, 200);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #904caf;
+}
+
+h2 {
+  color:rgb(200, 200, 200);
+  font-size: 30pt;
+}
+
+p {
+  color:rgb(200, 200, 200);
+  font-size: 20pt;
+}
+
+img {
+  color: rgb(200, 200, 200);
+  width:200px;
+  height:250px;
+}
+
+.button {
+  color: black;
+  background-color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #904caf;
+  color: white;
+}

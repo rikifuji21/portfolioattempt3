@@ -1,0 +1,166 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modal-open {
+  padding: 8px 16px;
+  background: #98c1d9;
+  color: white;
+  border-radius: 4px;
+  outline: none;
+  border-style: solid;
+  border: 2px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none;
+  animation: modal-open .3s;
+}
+
+.modal-content {
+  background-color: #3d5a80;
+  margin-top: 100px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 24px;
+  border-radius: 20px;
+  z-index: 4;
+  height: 800px;
+  width: 470px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modal-header {
+  font-weight: 500;
+  padding: 10px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #ee6c4d;
+}
+
+.modal-header .modal-close {
+  float: right;
+  font-size: 20px;
+  background: #efefef;
+  border: 0;
+  outline: 0;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+
+.modal-body {
+  color: #7b7b7b;
+  padding: 15px 0;
+}
+
+.modal-footer {
+  padding: 15px 0;
+}
+
+.modal-footer .modal-close {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #1a73e8;
+}
+
+#phone {
+    height: 830px;
+    width: 500px;
+    border: 3px;
+    border-style: solid;
+    background-color: #e0fbfc;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  border: 2px;
+  border-style: solid;
+  border-color: #3d5a80;
+}
+
+.btnSize {
+  width: 475px;
+  height: 125px;
+}
+
+#logoHeader {
+  color: #ee6c4d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  width: auto;
+  height: 50px;
+  background-color: #3d5a80;
+}
+
+.textSize {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #293241;
+}
+
+.SpeekBtn {
+  width: 460px;
+  height: 110px;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.SpeekBtn2 {
+  width: 460px;
+  height: 63px;
+  margin-top: 3px;
+  margin-left: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.NumberBtn {
+  width: 460px;
+  height: 67px;
+  margin-top: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ColorBtn {
+  width: 460px;
+  height: 85px;
+  margin-top: 4px;
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes modal-open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

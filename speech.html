@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <link href="speech.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="speech.js"></script>
+  <script src='https://code.responsivevoice.org/responsivevoice.js '></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="SpeechTalk.png" />
+  <title>SpeechBoard</title>
+</head>
+
+<body>
+<div id="logoHeader"> SpeechBoard </div>
+<div id="phone" class="center">
+  <!--modal buttons-->
+  <button class="modal-open center wrapper btnSize textSize" data-modal="modal1"> Who, What, When, Where, Why, & How</button>
+  <button class="modal-open center wrapper btnSize textSize" data-modal="modal2"> Greetings!</button>
+  <button class="modal-open center wrapper btnSize textSize" data-modal="modal3"> Actions</button>
+  <button class="modal-open center wrapper btnSize textSize" data-modal="modal4"> Describe</button>
+  <button class="modal-open center wrapper btnSize textSize" data-modal="modal5"> Numbers</button>
+  <button class="modal-open center wrapper btnSize textSize" data-modal="modal6"> Colors</button>
+</div>
+
+  <!--Modal 1 -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <div class="modal-header"> Say Something!
+      <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+      <div class="modal-body">
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Who');" type='button' value='Who' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('What');" type='button' value='What' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('When');" type='button' value='When' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Where');" type='button' value='Where' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Why');" type='button' value='Why' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('How');" type='button' value='How' />
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+
+  <!--Modal 2 -->
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <div class="modal-header"> Say Something!
+      <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+      <div class="modal-body">
+        <!--Greetings-->
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Hello');" type='button' value='Hello' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Hi');" type='button' value='Hi' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Nice to meet you');" type='button' value='Nice to meet you' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Greetings');" type='button' value='Greetings' />
+        <!--Farewell-->
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Good bye');" type='button' value='Good bye' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('See you later');" type='button' value='See you later' />
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+
+  <!--Modal 3 -->
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <div class="modal-header"> Say Something!
+      <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+      <div class="modal-body">
+        <!--Actions-->
+        <!--Movement-->
+        <input class="SpeekBtn2" onclick="responsiveVoice.speak('Running');" type='button' value='Running' />
+        <input class="SpeekBtn2" onclick="responsiveVoice.speak('Walking');" type='button' value='Walking' />
+        <input class="SpeekBtn2" onclick="responsiveVoice.speak('Playing');" type='button' value='Playing' />
+        <!--Not Moving?-->
+        <input class="SpeekBtn2" onclick="responsiveVoice.speak('Sitting');" type='button' value='Sitting' />
+        <input class="SpeekBtn2" onclick="responsiveVoice.speak('Sleeping');" type='button' value='Sleeping' />
+        <input class="SpeekBtn2" onclick="responsiveVoice.speak('Resting');" type='button' value='Resting' />
+        <input class="SpeekBtn2" onclick="responsiveVoice.speak('Thinking');" type='button' value='Thinking' />
+        <!--Senses-->
+        <input class="SpeekBtn2" onclick="responsiveVoice.speak('Feeling');" type='button' value='Feeling' />
+        <input class="SpeekBtn2" onclick="responsiveVoice.speak('Touching');" type='button' value='Touching' />
+        <input class="SpeekBtn2" onclick="responsiveVoice.speak('Hearing');" type='button' value='Hearing' />
+        <input class="SpeekBtn2" onclick="responsiveVoice.speak('Watching');" type='button' value='Watching' />
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+
+  <!--Modal 4 -->
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <div class="modal-header"> Say Something!
+      <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+      <div class="modal-body">
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Distracted');" type='button' value='Distracted' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Cool');" type='button' value='Cool' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Interesting');" type='button' value='Interesting' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Nice');" type='button' value='Nice' />
+        <input class="SpeekBtn" onclick="responsiveVoice.speak('Awesome');" type='button' value='Awesome' />
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+
+  <!--Modal 5 -->
+  <div class="modal" id="modal5">
+    <div class="modal-content">
+      <div class="modal-header"> Say Something!
+      <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+      <div class="modal-body">
+        <input class="NumberBtn" onclick="responsiveVoice.speak('0');" type='button' value='0' />
+        <input class="NumberBtn" onclick="responsiveVoice.speak('1');" type='button' value='1' />
+        <input class="NumberBtn" onclick="responsiveVoice.speak('2');" type='button' value='2' />
+        <input class="NumberBtn" onclick="responsiveVoice.speak('3');" type='button' value='3' />
+        <input class="NumberBtn" class="NumberBtn" onclick="responsiveVoice.speak('4');" type='button' value='4' />
+        <input class="NumberBtn" onclick="responsiveVoice.speak('5');" type='button' value='5' />
+        <input class="NumberBtn" onclick="responsiveVoice.speak('6');" type='button' value='6' />
+        <input class="NumberBtn" onclick="responsiveVoice.speak('7');" type='button' value='7' />
+        <input class="NumberBtn" onclick="responsiveVoice.speak('8');" type='button' value='8' />
+        <input class="NumberBtn" onclick="responsiveVoice.speak('9');" type='button' value='9' />
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+
+  <!--Modal 6 -->
+  <div class="modal" id="modal6">
+    <div class="modal-content">
+      <div class="modal-header"> Say Something!
+      <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+      <div class="modal-body">
+        <input class="ColorBtn" onclick="responsiveVoice.speak('Red');" type='button' value='Red' />
+        <input class="ColorBtn" onclick="responsiveVoice.speak('Orange');" type='button' value='Orange' />
+        <input class="ColorBtn" onclick="responsiveVoice.speak('Yellow');" type='button' value='Yellow' />
+        <input class="ColorBtn" onclick="responsiveVoice.speak('Green');" type='button' value='Green' />
+        <input class="ColorBtn" onclick="responsiveVoice.speak('Blue');" type='button' value='Blue' />
+        <input class="ColorBtn" onclick="responsiveVoice.speak('Purple');" type='button' value='Purple' />
+        <input class="ColorBtn" onclick="responsiveVoice.speak('Black');" type='button' value='Black' />
+        <input class="ColorBtn" onclick="responsiveVoice.speak('White');" type='button' value='White' />
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+
+</body>
